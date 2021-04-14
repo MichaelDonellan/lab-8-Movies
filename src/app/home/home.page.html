@@ -8,13 +8,18 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-card *ngFor="let movie of Movie">
-    <img src="{{Movie.Poster}}">
-    <ion-card=header>
-    <ion-card-subtitle>{{Movie.Year}}</ion-card-subtitle>
-    <ion-card-title>{{Movie.Title}}</ion-card-title>
-</ion-card-header>
- 
-</ion-card>
+  <ion-card *ngFor="let movie of movies">
+
+    <img src="{{movie.Poster}}">
+
+    <ion-card-header>
+
+      <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+
+      <ion-card-title>{{movie.Title}}</ion-card-title>
+
+    </ion-card-header>
+
+  </ion-card>
 
 </ion-content>

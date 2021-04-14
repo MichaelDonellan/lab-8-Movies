@@ -9,7 +9,7 @@ export class MovieService {
 
   constructor(private httpClient:HttpClient) { }
 GetMovieData():Observable<any>{
-  return this.httpClient.get('http://www.omdbapi.com/?apikey=2ee2ed84&s=%27silicone%27');// i added this'
+  return this.httpClient.get('http://www.omdbapi.com/?apikey=2ee2ed84&s=%27war%27');// i added this'
 }
 
 }

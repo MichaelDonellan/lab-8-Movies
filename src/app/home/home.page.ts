@@ -7,7 +7,7 @@ import {  MovieService} from '../Services/movie.service'; // i add this
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  movie:any = [];
+  movies:any = [];
   constructor(private movieService: MovieService) { // i add movie service
   }
 
@@ -15,8 +15,8 @@ export class HomePage implements OnInit {
 ngOnInit(){
 this.movieService.GetMovieData().subscribe(
   (data)=>{
-    this.movie = data.Search;
-    console.log(this.movie)
+    this.movies = data.Search;
+    console.log(this.movies)
   }
 );
     
